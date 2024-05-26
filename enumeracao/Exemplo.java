@@ -12,6 +12,9 @@ public class Exemplo {
 		Pedidos pedido1 = new Pedidos(1080, new Date(), OrderStatus.PAGAMENTO_PENDENTE);
 		
 		System.out.println(pedido1);
+		
+		OrderStatus os1 = OrderStatus.ENTREGUE;
+		OrderStatus os2 = OrderStatus.valueOf("ENTREGUE");
 
 	}
 
