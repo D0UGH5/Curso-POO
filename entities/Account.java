@@ -1,4 +1,4 @@
-package heranca;
+package entities;
 
 public class Account {
 	
@@ -36,7 +36,7 @@ public class Account {
 		return balance;
 	}
 
-	public void whithdraw(double ammount) {
+	public void withdraw(double ammount) {
 		balance -= ammount + 5.0;
 	}
 	

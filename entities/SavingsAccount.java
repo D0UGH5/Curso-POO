@@ -1,4 +1,4 @@
-package heranca;
+package entities;
 
 public class SavingsAccount extends Account {
 
@@ -26,7 +26,7 @@ public class SavingsAccount extends Account {
     }
 
     @Override
-    public void whithdraw(double ammount) {
+    public void withdraw(double ammount) {
         balance -= ammount;
     }
 }
