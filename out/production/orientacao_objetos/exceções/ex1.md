@@ -1,1 +1,0 @@
-<img src="../imagens/excessoes_personalizadas.png">
