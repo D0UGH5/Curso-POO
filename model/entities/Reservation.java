@@ -1,5 +1,7 @@
 package model.entities;
 
+import model.exceptions.DomainException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -11,10 +13,14 @@ public class Reservation {
 
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-    public Reservation(Integer roomNumber, Date checkin, Date checkout) {
+    public Reservation(Integer roomNumber, Date CheckIn, Date CheckOut){
+        if (!CheckOut.after(CheckIn)) {
+            throw new DomainException ("As datas de reserva atualizadas devem ser futuras às anteriores");
+        }
+
         this.roomNumber = roomNumber;
-        this.checkIn = checkin;
-        this.checkOut = checkout;
+        this.checkIn = CheckIn;
+        this.checkOut = CheckOut;
     }
 
     public Date getCheckin() {
@@ -38,14 +44,14 @@ public class Reservation {
         return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS); // converte milissegundos para dias
     }
 
-    public String updateDates(Date CheckIn, Date CheckOut) {
+    public String updateDates(Date CheckIn, Date CheckOut){
 
         Date now = new Date();
         if (CheckIn.before(now) || CheckOut.before(now)) {
-            return "As datas de reserva atualizadas devem ser futuras às anteriores";
+            throw new DomainException("As datas de reserva atualizadas devem ser futuras às anteriores");
         }
         if (!CheckOut.after(CheckIn)) {
-            return "As datas de reserva atualizadas devem ser futuras às anteriores";
+            throw new DomainException ("As datas de reserva atualizadas devem ser futuras às anteriores");
         }
 
         this.checkIn = CheckIn;
