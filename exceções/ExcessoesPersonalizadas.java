@@ -33,15 +33,11 @@ public class ExcessoesPersonalizadas {
             System.out.print("Data de Check-Out (dd/MM/yyyy): ");
             CheckOut = sdf.parse(sc.next());
 
-            Date now = new Date();
-            if (CheckIn.before(now) || CheckOut.before(now)) {
-                System.out.println("Erro ao reservar: as datas de reserva atualizadas devem ser futuras às anteriores");
-            }
-            else if (!CheckOut.after(CheckIn)) {
-                System.out.println("Erro ao reservar: as datas de reserva atualizadas devem ser futuras às anteriores");
+            String erro = reserva.updateDates(CheckIn, CheckOut);
+            if (erro != null) {
+                System.out.println("Erro na reserva: " + erro);
             }
             else{
-                reserva.updateDates(CheckIn, CheckOut);
                 System.out.println("Reserva: " + reserva);
             }
         }
