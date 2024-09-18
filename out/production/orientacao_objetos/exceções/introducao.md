@@ -10,7 +10,7 @@
 
 - Quando lançada, uma exceção é propagada na pilha de chamadas de métodos em execução, até que seja capturada (tratada) ou o programa seja encerrado.
 
-<img src="imagem1.png">
+<img src="../imagens/imagem1.png">
 https://docs.oracle.com/javase/10/docs/api/java/lang/package-tree.html
 
 
@@ -25,7 +25,8 @@ https://docs.oracle.com/javase/10/docs/api/java/lang/package-tree.html
 
 
 <h1>Extrutura try-catch</h1>
-<img src="tryCatch.png">
+<img src="../imagens/tryCatch.png">
 
 - sintaxe:
-  - <img src="sintaxeTryCatch.png">
+  - <img src="../imagens/sintaxeTryCatch.png">
+  
