@@ -3,8 +3,8 @@ package interfaces.Reuso;
 public class Application {
     public static void main(String[] args) {
 
-        Shape s1 = new Circle(Color.BLACK, 2);
-        Shape s2 = new Rectangle(Color.WHITE, 3, 4);
+        AbstractShape s1 = new Circle(Color.BLACK, 2);
+        AbstractShape s2 = new Rectangle(Color.WHITE, 3, 4);
 
         System.out.println("Circle area: " + String.format("%.3f", s1.area()));
         System.out.println("Circle color: " + s1.getColor());

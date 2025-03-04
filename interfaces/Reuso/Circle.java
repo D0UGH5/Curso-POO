@@ -1,6 +1,6 @@
 package interfaces.Reuso;
 
-public class Circle extends Shape{
+public class Circle extends AbstractShape{
 
     private Double radius;
 
