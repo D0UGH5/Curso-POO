@@ -1,5 +1,24 @@
 package interfaces.HerancaMultipla;
 
-public class ComboDevice {
-    //Desafio: criar uma classe que herda de Scanner e Printer
+public class ComboDevice extends Device implements Scanner, Printer{
+
+
+    public ComboDevice(String serialNumber) {
+        super(serialNumber);
+    }
+
+    @Override
+    public void print(String doc) {
+        System.out.println("Combo printing: " + doc);
+    }
+
+    @Override
+    public String scan() {
+        return "combo scan result";
+    }
+
+    @Override
+    public void processDoc(String doc) {
+        System.out.println("Combo processing " + doc);
+    }
 }
