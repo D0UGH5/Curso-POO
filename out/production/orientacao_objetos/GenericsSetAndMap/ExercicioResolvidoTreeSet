@@ -1,0 +1,17 @@
+Problema exemplo:
+
+Um site de internet registra um log de acessos dos usuários. Um registro e log consiste no nome de usuário (apenas uma palavra) e o instante em que o usuário acessou o site no padrão ISO 8601, separados po espeaço, conforme exemplo. Faer um prorama que leia o log de acessos a partiir de um arquivo, e daí informe quantos usuários distintos acessaram o site.
+
+IMPUT FILE:
+
+amanda 2018-06-01T08:23:00Z
+alex86 2018-06-01T09:15:30Z
+bob_smith 2018-06-01T10:05:15Z
+amanda 2018-06-01T11:45:00Z
+clara 2018-06-01T12:30:45Z
+alex86 2018-06-01T13:20:10Z
+
+EXECUTION:
+
+Enter file full path: C:\temp\log.txt
+Total distinct users: 4
