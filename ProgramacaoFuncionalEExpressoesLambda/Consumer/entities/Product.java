@@ -1,8 +1,4 @@
-package Consumer.entities;
-
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Objects;
+package ProgramacaoFuncionalEExpressoesLambda.Consumer.entities;
 
 public class Product {
     private String nome;

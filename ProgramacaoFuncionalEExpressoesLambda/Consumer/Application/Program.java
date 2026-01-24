@@ -1,7 +1,7 @@
-package Consumer.Application;
+package ProgramacaoFuncionalEExpressoesLambda.Consumer.Application;
 
-import Consumer.entities.Product;
-import Consumer.util.PriceUpdate;
+import ProgramacaoFuncionalEExpressoesLambda.Consumer.entities.Product;
+import ProgramacaoFuncionalEExpressoesLambda.Consumer.util.PriceUpdate;
 
 import java.util.ArrayList;
 import java.util.List;

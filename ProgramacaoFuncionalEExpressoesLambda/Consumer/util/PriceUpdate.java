@@ -1,6 +1,6 @@
-package Consumer.util;
+package ProgramacaoFuncionalEExpressoesLambda.Consumer.util;
 
-import Consumer.entities.Product;
+import ProgramacaoFuncionalEExpressoesLambda.Consumer.entities.Product;
 
 import java.util.function.Consumer;
 
